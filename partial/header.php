@@ -26,7 +26,7 @@
                     <a href="location.php" class="nav-link">Locations</a>
                 </li>
                 <li class="nav-item" >
-                    <a href="success.php" class="nav-link">Succès Evasion</a>
+                    <a href="newform.php" class="nav-link">New Form</a>
                 </li>
             </ul>
             
