@@ -20,13 +20,13 @@
         
             <ul class="navbar-nav">
                 <li class="nav-item" >
-                    <a href="cars.php" class="nav-link">Ventes</a>
+                    <a href="vente.php" class="nav-link">Ventes</a>
                 </li>
                 <li class="nav-item" >
-                    <a href="drivers.php" class="nav-link">Locations</a>
+                    <a href="location.php" class="nav-link">Locations</a>
                 </li>
                 <li class="nav-item" >
-                    <a href="cars.php" class="nav-link">Succès Evasion</a>
+                    <a href="success.php" class="nav-link">Succès Evasion</a>
                 </li>
             </ul>
             

@@ -35,6 +35,8 @@ require_once "partial/dataclient.php"
             </p>
         </div>
         <h2 class="my-5 text-center"> Acteur majeur de l’immobilier de luxe <br>& ambassadeur de l’art de vivre</h2>
+        
+        <!-- Ajout vignette avec mise en forme  -->
         <div class="card-deck  justify-content-center">
             <!-- Recup Data  -->
             <div class="card text-center shadow">
