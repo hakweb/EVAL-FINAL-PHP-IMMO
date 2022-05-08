@@ -1,3 +1,11 @@
+<?php
+require_once "partial/header.php";
+?>
+
+<!-- APPEL BDD Client  -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +40,9 @@
             <button type="submit" class="m-auto my-2 d-block btn btn-success">Ajouter</button>
         </form>
     </main>
-
+    <?php
+    require_once "partial/footer.php";
+    ?>
 </body>
 
 </html>
