@@ -20,65 +20,65 @@ require_once "partial/datalocation.php";
 </head>
 
 <body>
-   <main>
- <!-- Ajout vignette avec mise en forme  -->
+    <main>
+        <!-- Ajout vignette avec mise en forme  -->
 
 
-                             <!-- Suite Appel BDD Client +  Concatener -->
-     
-
-    <div class="container">
-    <div class="jumbotron my-5 text-center">                        
-
-<h2 class="my-5 text-center">
-    Dites Oui ! à vos envies !
-</h2>
-
-<div class="row flex-lg-row flex-xl-row flex-column">
-
-    <?php foreach ($envies as $envie) : ?>
-        <div class="card text-center shadow">
-                <div class="card-header bg-dark text-white">
-                    <h2 class="card-title">
-
-         <?php if ($envie["type"]=="location"):
-         ?> 
-        
-
-        <img src=" <?= $envie ["photo"] ?>" width=300px height=150px class="img-fluid" alt="Villa du soleil">
-        <hr>
-      
-                    
-        <p> <?= $envie ['titre'] ?></p> 
-        <hr>
-       
-        <p> Prix : <span> <?= $envie ['prix'] ?> € </span> 
-        </p>
-
-        <p> Surface : <span> <?= $envie ['surface'] ?> m2 </span>
-        </p>
-
-        <p> <span>
-        <?= $envie ['cp'] . " " . $envie ['ville'] ?> </span>
-        </p>
-        <p> <span> <?= $envie ['description'] ?>  </span>
-        </p>
-        
+        <!-- Suite Appel BDD Client +  Concatener -->
 
 
-        <?php endif;
-    endforeach; ?>
+        <div class="container">
+            <div class="jumbotron my-5 text-center">
 
-</div>
-  
-    </div>
+                <h2 class="my-5 text-center">
+                    Dites Oui ! à vos envies !
+                </h2>
+
+                <div class="row flex-lg-row flex-xl-row flex-column">
+
+                    <?php foreach ($envies as $envie) : ?>
+                                    <?php if ($envie["type"] == "location") :
+                                    ?>
+                        <div class="card text-center shadow">
+                            <div class="card-header bg-dark text-white mt-3">
+                                <h2 class="card-title">
 
 
-                    
-         
+
+                                        <img src=" <?= $envie["photo"] ?>" width=300px height=150px class="img-fluid" alt="Villa du soleil">
+                                        <hr>
 
 
-   </main>
+                                        <p> <?= $envie['titre'] ?></p>
+                                        <hr>
+
+                                        <p> Prix : <span> <?= $envie['prix'] ?> € </span>
+                                        </p>
+
+                                        <p> Surface : <span> <?= $envie['surface'] ?> m2 </span>
+                                        </p>
+
+                                        <p> <span>
+                                                <?= $envie['cp'] . " " . $envie['ville'] ?> </span>
+                                        </p>
+                                        <p> <span> <?= $envie['description'] ?> </span>
+                                        </p>
+
+                                        
+                            </div>
+                                      
+                                <?php endif;
+                                endforeach; ?>
+
+
+                        </div>
+
+
+
+
+
+
+    </main>
 
     <?php
     require_once "partial/footer.php";

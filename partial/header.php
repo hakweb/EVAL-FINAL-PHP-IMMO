@@ -15,20 +15,20 @@
 
     <header>
         <nav class="navbar navbar-expand navbar-dark bg-dark">
-    
+
             <a href="index.php" class="navbar-brand text-danger">Ozark Inc.</a>
-        
+
             <ul class="navbar-nav">
-                <li class="nav-item" >
+                <li class="nav-item">
                     <a href="vente.php" class="nav-link">Ventes</a>
                 </li>
-                <li class="nav-item" >
+                <li class="nav-item">
                     <a href="location.php" class="nav-link">Locations</a>
                 </li>
-                <li class="nav-item" >
+                <li class="nav-item">
                     <a href="newform.php" class="nav-link">New Form</a>
                 </li>
             </ul>
-            
+
         </nav>
     </header>

@@ -1,15 +1,14 @@
 
-
-?>
 <?php
 
 var_dump($_POST);
+var_dump($_FILE);
 
 $bdd = new PDO('mysql:host=localhost;dbname=immoa3l', "root","");
 
 // encore cette bdd ici !
 
-$titre = $_POST['titre']; 
+$titre = $_POST['titre'];
 $adresse = $_POST['adresse']; 
 $cp = $_POST['cp']; 
 $ville = $_POST['ville']; 
@@ -53,5 +52,5 @@ var_dump($stmt = $bdd->prepare($req));
 // ah comme ça ! évidemment !
 
 if ($result) {
-    header("Location: test.php");
+    header("Location: index.php");
 }
