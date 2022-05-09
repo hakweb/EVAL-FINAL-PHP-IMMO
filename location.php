@@ -45,7 +45,7 @@ require_once "partial/datalocation.php";
 
 
 
-                                        <img src=" <?= $envie["photo"] ?>" width=300px height=150px class="img-fluid" alt="Villa du soleil">
+                                        <img src=" <?= $envie["photo"] ?>" width=300px height=150px class="img-fluid" alt="">
                                         <hr>
 
 
@@ -63,8 +63,7 @@ require_once "partial/datalocation.php";
                                         </p>
                                         <p> <span> <?= $envie['description'] ?> </span>
                                         </p>
-
-                                        
+   
                             </div>
                                       
                                 <?php endif;

@@ -4,6 +4,8 @@
 var_dump($_POST);
 var_dump($_FILE);
 
+// se connecter à la BDD 
+
 $bdd = new PDO('mysql:host=localhost;dbname=immoa3l', "root","");
 
 // encore cette bdd ici !
@@ -18,9 +20,11 @@ $photo = $_POST['photo'];
 $type = $_POST['type']; // vente ou location //
 $description = $_POST['description']; 
 
-// faire des vérifs avant !
+// faire des vérifications avant !
 
 // Renseigner Info Structure de la Table  pour l'insertion  dans la BDD
+
+//Implémenter l'Ajout avec INSERT INTO
 $req = "INSERT INTO `logement`(`titre`, `adresse`, `cp`, `ville`, `surface`, `prix`, `photo`, `type`, `description`) VALUES
                     
                     (:titre,
@@ -46,7 +50,7 @@ $stmt->bindValue(":description",$description, PDO::PARAM_STR);
 
 $result = $stmt->execute(); // return true si good donc si 
 
-$stmt->closeCursor();       // donc SI good redirect avec header
+$stmt->closeCursor();       // donc SI good redirection avec header
 
 var_dump($stmt = $bdd->prepare($req));
 // ah comme ça ! évidemment !

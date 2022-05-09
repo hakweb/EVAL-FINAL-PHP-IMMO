@@ -1,4 +1,8 @@
- <!-- inclure le header  -->
+<!-- Création du formulaire dd'Ajout Annonce Immo-->
+<!-- Preparer la Base de Données PHmyAdmin -->
+
+
+<!-- inclure le header  -->
 <?php
 require_once "partial/header.php";
 ?>
@@ -20,7 +24,7 @@ require_once "partial/header.php";
 
         <h1 class="p-4 my-5 bg-dark text-danger text-center">Formulaire</h1>
 
-
+<!--  -->
         <form class="bg-light shadow p-3 form-group col-6 m-auto border" action="newformadd.php" method="post">
             <input type="text" class="form-control my-2" name="titre" placeholder="titre">
             <input type="text" class="form-control my-2" name="adresse" placeholder="adresse">
