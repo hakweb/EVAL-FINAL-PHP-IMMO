@@ -24,7 +24,7 @@ require_once "partial/header.php";
 
         <h1 class="p-4 my-5 bg-dark text-danger text-center">Formulaire</h1>
 
-<!--  -->
+<!-- l'ajout renvoi à newformaad.php par rapport à l'Action  -->
         <form class="bg-light shadow p-3 form-group col-6 m-auto border" action="newformadd.php" method="post">
             <input type="text" class="form-control my-2" name="titre" placeholder="titre">
             <input type="text" class="form-control my-2" name="adresse" placeholder="adresse">

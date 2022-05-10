@@ -28,6 +28,10 @@
                 <li class="nav-item">
                     <a href="newform.php" class="nav-link">New Form</a>
                 </li>
+                <li class="nav-item">
+                    <a href="dashboard.php" class="nav-link">Dashboard</a>
+                </li>
+
             </ul>
 
         </nav>
